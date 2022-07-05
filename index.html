@@ -419,10 +419,55 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal-window">
 				<button class="close-modal" type="button" data-modal-close>
-					<svg class="icon footer-social-icon" width="18" height="18">
+					<svg class="icon" width="18" height="18">
 						<use href="./images/sprite/icons.svg#icon-close"></use>
 					</svg>
 				</button>
+				<form class="modal-form">
+					<h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+					<label class="modal-form-label">
+						<span class="modal-form-desc">Имя</span>
+						<input type="text" name="name" class="modal-form-input" required />
+						<svg class="icon modal-form-icon" width="18" height="18">
+							<use href="./images/sprite/icons.svg#icon-form-user"></use>
+						</svg>
+					</label>
+					<label class="modal-form-label">
+						<span class="modal-form-desc">Телефон</span>
+						<input type="tel" name="tel" class="modal-form-input" required />
+						<svg class="icon modal-form-icon" width="18" height="18">
+							<use href="./images/sprite/icons.svg#icon-form-tel"></use>
+						</svg>
+					</label>
+					<label class="modal-form-label">
+						<span class="modal-form-desc">Почта</span>
+						<input type="email" name="email" class="modal-form-input" required />
+						<svg class="icon modal-form-icon" width="18" height="18">
+							<use href="./images/sprite/icons.svg#icon-form-mail"></use>
+						</svg>
+					</label>
+					<label class="modal-form-label">
+						<span class="modal-form-desc">Комментарий</span>
+						<textarea
+							name="desc"
+							cols="30"
+							rows="10"
+							class="modal-form-comment modal-form-input"
+							placeholder="Введите текст"
+						></textarea>
+					</label>
+					<p class="contract-check">
+						<label class="modal-check-label">
+							<input type="checkbox" name="check" class="modal-checkbox" required />
+							<span class="checkbox-icon"></span>
+							<span class="modal-check-desc">
+								Соглашаюсь с рассылкой и принимаю
+								<a href="#" class="link modal-link">Условия договора</a>
+							</span>
+						</label>
+					</p>
+					<button type="submit" class="btn modal-form-btn">Отправить</button>
+				</form>
 			</div>
 		</div>
 		<!-- Include js -->
