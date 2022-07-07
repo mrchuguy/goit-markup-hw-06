@@ -608,6 +608,14 @@ body {
 	right: 8px;
 	top: 8px;
 	cursor: pointer;
+	transition: color var(--anim-dur) var(--anim-func);
+}
+.icon-close {
+	fill: currentColor;
+}
+.close-modal:hover,
+.close-modal:focus {
+	color: var(--hover-link-color);
 }
 .modal-form {
 	display: block;
@@ -620,9 +628,6 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 }
-.modal-form-label {
-	position: relative;
-}
 .modal-form-desc {
 	display: block;
 	font-weight: 400;
@@ -631,6 +636,9 @@ body {
 	letter-spacing: 0.01em;
 	color: var(--grey-text-color);
 	margin-bottom: 4px;
+}
+.input-wrap {
+	position: relative;
 }
 .modal-form-input {
 	display: block;
@@ -652,8 +660,9 @@ body {
 }
 .modal-form-icon {
 	position: absolute;
-	top: 30px;
+	top: 50%;
 	left: 12px;
+	transform: translateY(-50%);
 	fill: currentColor;
 	transition: fill var(--anim-dur) var(--anim-func);
 }
@@ -681,6 +690,8 @@ body {
 .modal-check-label {
 	padding-left: 24px;
 	position: relative;
+	padding-left: 36px;
+	color: var(--grey-text-color);
 }
 .modal-checkbox {
 	-webkit-appearance: none;
@@ -697,7 +708,7 @@ body {
 	height: 15px;
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 12px;
 	transform: translateY(-50%);
 	background-image: url("../images/sprite/check-border.svg");
 }
